@@ -3,7 +3,9 @@ import { motion } from "framer-motion";
 export default function AgentCard({ title, subtitle, comingSoon = false }) {
   return (
     <motion.div
-      className={`glow-border p-6 rounded-2xl ${comingSoon ? "opacity-80" : ""}`}
+      className={`glow-border p-6 rounded-2xl ${
+        comingSoon ? "opacity-80" : ""
+      }`}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.35 }}
