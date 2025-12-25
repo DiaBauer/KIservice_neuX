@@ -9,6 +9,7 @@ export default function AgentCard({ title, subtitle, comingSoon = false }) {
       transition={{ duration: 0.35 }}
     >
       <h3 className="text-xl font-semibold text-white">{title}</h3>
+
       {subtitle ? (
         <p className="text-white/70 mt-2 min-h-[56px]">{subtitle}</p>
       ) : null}
